@@ -5,7 +5,7 @@ const observer = new IntersectionObserver(entries => {
       console.log(item)
       const target = item.target
       const timer = setTimeout(()=>{
-        if(target.getAttribute('src') === './assets/loading.gif'){
+        if(target.getAttribute('src') === '../assets/loading.gif'){
           target.src = target.getAttribute('data-url')
           observer.unobserve(target)
          }
