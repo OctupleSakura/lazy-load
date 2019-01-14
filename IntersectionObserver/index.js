@@ -10,7 +10,7 @@ const observer = new IntersectionObserver(entries => {
           observer.unobserve(target)
          }
          clearTimeout(timer)
-      }, 500)
+      }, 2000)
     }
    })
 })
